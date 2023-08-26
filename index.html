@@ -5,99 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
+    <title>Backgrounds & Shadows</title>
   </head>
   <body>
-    <!-- Positioning -->
-    <div class="relative w-1/2 h-12 bg-red-200">
-      <p>Parent Element</p>
-      <div class="absolute bottom-0 right-0 bg-red-500">
-        <p>Absolute Child</p>
-      </div>
+    <!-- Background Classes -->
+    <div class="h-64 w-72 bg-no-repeat bg-cover bg-center" style="background-image: url('../assets/img/img1.jpg');"></div>
+
+    <!-- Gradients -->
+    <div class="h-24 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+
+    <!-- Shadows -->
+    <div class="w-96 mt-6 ml-4 p-3 shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda consequuntur sit magnam explicabo repudiandae, suscipit id, necessitatibus pariatur ipsum maiores quia officia voluptatum aperiam delectus at? Non, eligendi voluptates?</div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2x1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda consequuntur sit magnam explicabo repudiandae, suscipit id, necessitatibus pariatur ipsum maiores quia officia voluptatum aperiam delectus at? Non, eligendi voluptates?</div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow-2x1 shadow-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda consequuntur sit magnam explicabo repudiandae, suscipit id, necessitatibus pariatur ipsum maiores quia officia voluptatum aperiam delectus at? Non, eligendi voluptates?</div>
+    <div class="w-96 mt-6 ml-4 p-3 shadow shadow-blue-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda consequuntur sit magnam explicabo repudiandae, suscipit id, necessitatibus pariatur ipsum maiores quia officia voluptatum aperiam delectus at? Non, eligendi voluptates?</div>
+
+
+    <!-- Mix Blend -->
+    <div class="flex justify-center -space-x-24">
+      <div class="mix-blend-multiply bg-blue-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore, ducimus adipisci consectetur dolorum officia nesciunt repudiandae eligendi illo animi?</div>
+      <div class="mix-blend-multiply bg-pink-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias saepe tenetur veniam quos porro voluptate rem a corporis quibusdam nihil.</div>
     </div>
 
-    <!-- Top left corner -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Top right corner -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Bottom left corner -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Bottom right corner -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Span top edge -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute inset-x-0 h-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Span left edge -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Span right edge -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Span bottom edge -->
-    <div class="relative h-32 w-32 bg-yellow-100">
-      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300"></div>
-    </div>
-
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
   </body>
 </html>
 
-<!-- Position Classes
-      static	    position: static;
-      fixed	      position: fixed;
-      absolute	  position: absolute;
-      relative	  position: relative;
-      sticky	    position: sticky;
-    -->
+<!-- Background Size
+  bg-auto	    background-size: auto;
+  bg-cover	  background-size: cover;
+  bg-contain	background-size: contain;
+-->
 
-<!-- Display Classes
-      block	            display: block;
-      inline-block	    display: inline-block;
-      inline	          display: inline;
-      flex	            display: flex;
-      inline-flex	      display: inline-flex;
-      table	            display: table;
-      grid	            display: grid;
-      inline-grid	      display: inline-grid;
-      contents	        display: contents;
-      list-item	        display: list-item;
-      hidden	          display: none;
-    -->
+<!-- Background Repeat
+  bg-repeat	      background-repeat: repeat;
+  bg-no-repeat	  background-repeat: no-repeat;
+  bg-repeat-x	    background-repeat: repeat-x;
+  bg-repeat-y	    background-repeat: repeat-y;
+  bg-repeat-round	background-repeat: round;
+  bg-repeat-space	background-repeat: space;
+-->
 
-<!-- Z-Index
-      z-0	    z-index: 0;
-      z-10	  z-index: 10;
-      z-20	  z-index: 20;
-      z-30	  z-index: 30;
-      z-40	  z-index: 40;
-      z-50	  z-index: 50;
-      z-auto	z-index: auto;
-    -->
+<!-- Background Position
+  bg-bottom	      background-position: bottom;
+  bg-center	      background-position: center;
+  bg-left	        background-position: left;
+  bg-left-bottom	background-position: left bottom;
+  bg-left-top	    background-position: left top;
+  bg-right	      background-position: right;
+  bg-right-bottom	background-position: right bottom;
+  bg-right-top	  background-position: right top;
+  bg-top	        background-position: top;
+-->
 
-<!-- Float
-      float-right	  float: right;
-      float-left	  float: left;
-      float-none	  float: none;
-    -->
+<!-- Background Attachment
+  bg-fixed	  background-attachment: fixed;
+  bg-local	  background-attachment: local;
+  bg-scroll	  background-attachment: scroll;
+-->
+
+<!-- 
+  Shadows
+  shadow-sm	    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  shadow	      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  shadow-md	    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  shadow-lg	    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  shadow-xl	    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  shadow-2xl	  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  shadow-inner	box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  shadow-none	  box-shadow: 0 0 #0000;
+ -->
